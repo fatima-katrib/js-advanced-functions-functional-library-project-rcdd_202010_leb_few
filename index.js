@@ -109,6 +109,7 @@ flatten: function(collection, shallow, newArr=[]) {
       }
       return newArr
     },
+    
  uniq: function(collection, sorted=false, iteratee=false) {
       if (sorted) {
         return fi.uniqSorted(collection, iteratee)
