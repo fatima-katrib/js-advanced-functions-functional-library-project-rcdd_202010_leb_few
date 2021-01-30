@@ -25,7 +25,7 @@ if (!(collection instanceof Array))
       return newArr;
     },
 
-reduce: function() {
+reduce: function(c = [], callback = () => {}, acc) {
 let collection = c.slice(0)
 
 			if (!acc) {
