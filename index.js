@@ -97,7 +97,7 @@ sortBy: function(collection, callback) {
       })
     },
 
-flatten: function(collection, shallow, newArr=[]) {
+    flatten: function(collection, shallow, newArr=[]) {
       if (!Array.isArray(collection)) return newArr.push(collection)
       if (shallow) {
         for (let val of collection)
