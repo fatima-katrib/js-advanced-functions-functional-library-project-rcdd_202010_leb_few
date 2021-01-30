@@ -111,18 +111,6 @@ flatten: function(collection, shallow, newArr=[]) {
     },
 
   
-functions: function(obj) {
-      const functionNames = []
-
-      for (let key in obj) {
-        if (typeof obj[key] === "function"){
-          functionNames.push(key)
-        }
-      }
-
-      return functionNames.sort()
-    }, 
-
 keys: function(obj) {
       const keys = []
       for (let key in obj){
@@ -137,6 +125,17 @@ values: function(obj) {
       }
       return values
       },
+functions: function(obj) {
+      const functionNames = []
+
+      for (let key in obj) {
+        if (typeof obj[key] === "function"){
+          functionNames.push(key)
+        }
+      }
+
+      return functionNames.sort()
+    }, 
   }
 })()
 
