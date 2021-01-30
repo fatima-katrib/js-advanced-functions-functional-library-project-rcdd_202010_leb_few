@@ -107,9 +107,8 @@ flatten: function(collection, shallow, newArr=[]) {
           this.flatten(val, false, newArr)
         }
       }
-      return newArr;
+      return newArr
     },
-
   
 keys: function(obj) {
       const keys = []
